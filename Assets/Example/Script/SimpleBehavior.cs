@@ -33,6 +33,14 @@ public class SimpleBehavior : MonoBehaviour {
 				Message = "Find Text";
 			}
 		}
+		if(GUILayout.Button("Find Parent Component"))
+		{
+			var component = GetComponentInParent<Text>();
+			if(component != null)
+			{
+				Message = "Find Text in parent";
+			}
+		}
 		GUILayout.Label(Message);
 	}
 }
