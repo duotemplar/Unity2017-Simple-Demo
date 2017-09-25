@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 344311a4be399734bb979a9d9faacc47
-timeCreated: 1506062337
+guid: 96cae36bf8dfb4242a8faad1ee81938b
+timeCreated: 1506333680
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName: {}
@@ -40,8 +40,8 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 1
-  spriteExtrude: 1
-  spriteMeshType: 1
+  spriteExtrude: 4
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
@@ -58,15 +58,15 @@ TextureImporter:
   - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
   - buildTarget: Standalone
     maxTextureSize: 2048
-    textureFormat: 7
-    textureCompression: 0
+    textureFormat: 4
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -74,7 +74,7 @@ TextureImporter:
   - buildTarget: iPhone
     maxTextureSize: 2048
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -82,25 +82,45 @@ TextureImporter:
   - buildTarget: Android
     maxTextureSize: 2048
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
   - buildTarget: WebGL
     maxTextureSize: 2048
-    textureFormat: 7
-    textureCompression: 0
+    textureFormat: -1
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 1
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites: []
-    outline: []
+    outline:
+    - - {x: -25.384083, y: 42.13849}
+      - {x: -49.263214, y: 27.052864}
+      - {x: -49.911587, y: 6.5899353}
+      - {x: -42.180065, y: -4.4785156}
+      - {x: -40.908546, y: -15.103569}
+      - {x: -25.858788, y: -23.826797}
+      - {x: -10.965164, y: -20.737823}
+      - {x: -4.67313, y: -31.549667}
+      - {x: -14.739746, y: -43.482475}
+      - {x: -11.875271, y: -59.508812}
+      - {x: 6.892174, y: -45.915672}
+      - {x: 39.2723, y: -60.997627}
+      - {x: 51.5, y: -56.71283}
+      - {x: 36.028908, y: -45.236786}
+      - {x: 16.86547, y: -25.134396}
+      - {x: 37.27076, y: -22.760952}
+      - {x: 10.96468, y: -1.5059624}
+      - {x: 17.403458, y: 24.949547}
+      - {x: 4.6615334, y: 52.188797}
+      - {x: -7.9006157, y: 50.712822}
     physicsShape: []
-  spritePackingTag: test
+  spritePackingTag: alice
   userData: 
   assetBundleName: 
   assetBundleVariant: 
