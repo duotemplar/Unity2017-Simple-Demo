@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_1_0;UNITY_2017_1;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_1_0;UNITY_2017_1;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -52,6 +52,66 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Example\Script\SimpleBehavior.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scenes\Tests\DistanceFogStatic\DistanceFogStatic.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\CameraOverlay.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\CubeMover.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\CustomLightingManager.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\DirectionalLightManager.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\DisableRendererOnMouseDown.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\DistanceLight.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\EditModeGridSnap.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\EnableCameraDepthTexture.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\Fps.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\FrameRate.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\MarvelousBloom.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\MeshTools\OceanCreator.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\ObjectRotator.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\OceanWaver.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\ScreenTextureBlend.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\SimpleRotator.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\Splasher.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\UVHeightGenerator.cs" />
+     <Compile Include="Assets\MarvelousTechniques\Scripts\UVLayoutGenerator.cs" />
+     <None Include="Assets\MarvelousTechniques\Shaders\DefaultTexture.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSimpleDistanceLightRS.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\FloatingLeaf.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\OceanDepth.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\Vignette.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingMaster.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\OneColor.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\Flower.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\Marvelous.cginc" />
+     <None Include="Assets\MarvelousTechniques\Shaders\Transparent2.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\ImageEffects\Bloom.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\CameraOverlay.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\TextureAnimationTransparent.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\LinearGradientBGPixel3Color.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSimpleRS.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSimpleDistanceLight.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSimpleSoftFog.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingRS.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingHardFog.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\Transparent.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\WaterPool.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSimple.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\CustomLighting.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\LinearGradientBG.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSoftFogAlpha.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\OceanOpaque.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\TransparentAdditiveFG.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\TextureBG.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\WaterBox.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\FlagWave.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\Waterfall.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSoftFog.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\ImageEffects\ScreenTextureBlend.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingDistanceLight.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\LinearGradientBGPixel.shader" />
+     <None Include="Assets\ShaderTest\ImageBloom.shader" />
+     <None Include="Assets\README.txt" />
+     <None Include="Assets\MarvelousTechniques\Shaders\LinearGradientImageBG.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\TransparentAdditive.shader" />
+     <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSimpleSoftFogRS.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>F:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
