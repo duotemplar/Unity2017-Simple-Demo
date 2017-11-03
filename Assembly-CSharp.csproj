@@ -72,9 +72,7 @@
      <Compile Include="Assets\MarvelousTechniques\Scripts\Splasher.cs" />
      <Compile Include="Assets\MarvelousTechniques\Scripts\UVHeightGenerator.cs" />
      <Compile Include="Assets\MarvelousTechniques\Scripts\UVLayoutGenerator.cs" />
-     <Compile Include="Assets\ShaderTest\FullScreenPass.cs" />
      <None Include="Assets\MarvelousTechniques\Shaders\DefaultTexture.shader" />
-     <None Include="Assets\Shaders\iphone-lightmap-alphatest.shader" />
      <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSimpleDistanceLightRS.shader" />
      <None Include="Assets\MarvelousTechniques\Shaders\FloatingLeaf.shader" />
      <None Include="Assets\MarvelousTechniques\Shaders\OceanDepth.shader" />
@@ -82,29 +80,23 @@
      <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingMaster.shader" />
      <None Include="Assets\MarvelousTechniques\Shaders\OneColor.shader" />
      <None Include="Assets\MarvelousTechniques\Shaders\Flower.shader" />
-     <None Include="Assets\Shaders\vertexUnlit.shader" />
      <None Include="Assets\MarvelousTechniques\Shaders\Marvelous.cginc" />
      <None Include="Assets\MarvelousTechniques\Shaders\Transparent2.shader" />
      <None Include="Assets\MarvelousTechniques\Shaders\ImageEffects\Bloom.shader" />
-     <None Include="Assets\Shaders\LightmapOnlyShader.shader" />
      <None Include="Assets\MarvelousTechniques\Shaders\CameraOverlay.shader" />
      <None Include="Assets\MarvelousTechniques\Shaders\TextureAnimationTransparent.shader" />
      <None Include="Assets\MarvelousTechniques\Shaders\LinearGradientBGPixel3Color.shader" />
      <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSimpleRS.shader" />
-     <None Include="Assets\Shaders\Particle Add Culled.shader" />
      <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSimpleDistanceLight.shader" />
      <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSimpleSoftFog.shader" />
      <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingRS.shader" />
-     <None Include="Assets\Shaders\iphone-lightmap-reflective.shader" />
      <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingHardFog.shader" />
      <None Include="Assets\MarvelousTechniques\Shaders\Transparent.shader" />
      <None Include="Assets\MarvelousTechniques\Shaders\WaterPool.shader" />
      <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSimple.shader" />
      <None Include="Assets\MarvelousTechniques\Shaders\CustomLighting.shader" />
      <None Include="Assets\MarvelousTechniques\Shaders\LinearGradientBG.shader" />
-     <None Include="Assets\Shaders\Alpha-VertexColor-1.shader" />
      <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSoftFogAlpha.shader" />
-     <None Include="Assets\Shaders\vertexColor.shader" />
      <None Include="Assets\MarvelousTechniques\Shaders\OceanOpaque.shader" />
      <None Include="Assets\MarvelousTechniques\Shaders\TransparentAdditiveFG.shader" />
      <None Include="Assets\MarvelousTechniques\Shaders\TextureBG.shader" />
@@ -118,10 +110,8 @@
      <None Include="Assets\ShaderTest\ImageBloom.shader" />
      <None Include="Assets\README.txt" />
      <None Include="Assets\MarvelousTechniques\Shaders\LinearGradientImageBG.shader" />
-     <None Include="Assets\Blob-Shadow\ProjectorMultiply.shader" />
      <None Include="Assets\MarvelousTechniques\Shaders\TransparentAdditive.shader" />
      <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingSimpleSoftFogRS.shader" />
-     <None Include="Assets\Shaders\Alpha-VertexColor.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>F:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
