@@ -3,22 +3,28 @@
 	Properties
 	{
 		_MainTex ("Texture", 2D) = "white" {}
-		_BloomTex ("Bloom", 2D) = "white" {}
-		_Bloom("Slide", Float) = 0.0
+		_BloomTex("BloomTexture", 2D) = "White" {}
+		_Radius("SampleRadius", Float) = 0.0		//pixel bloom select radius
+		_Threshold("BloomRange", Float) = 0.0		//泛光范围，阈值越小，泛光的边缘的范围就越小
+		_BloomColor("BloomColor", Color) = (0,0,0,0)
 	}
 	SubShader
 	{
 		// No culling or depth
 		Cull Off ZWrite Off ZTest Always
 
+		//Pass 0
 		Pass
 		{
 			CGPROGRAM
 			#pragma vertex vert
-			#pragma fragment frag
+			#pragma fragment fragBloom
 			
-			float _Bloom;
+			float _Radius;
+			float _Threshold;
 			half4 _MainTex_TexelSize;
+			float4 _BloomColor;
+
 
 			#include "UnityCG.cginc"
 
@@ -41,39 +47,45 @@
 				o.vertex = UnityObjectToClipPos(v.vertex);
 				o.uv = v.uv;
 				
-				o.uv2[0] = v.uv + _MainTex_TexelSize.xy * half2(1.5, 1.5);
-				o.uv2[1] = v.uv + _MainTex_TexelSize.xy * half2(-1.5, 1.5);
-				o.uv2[2] = v.uv + _MainTex_TexelSize.xy * half2(-1.5, 1.5);
-				o.uv2[3] = v.uv + _MainTex_TexelSize.xy * half2(-1.5, 1.5);
+				//先实现简单的4点采样，回头考虑更加复杂的8点采样及更过
+				o.uv2[0] = v.uv + _MainTex_TexelSize.xy * half2(_Radius, _Radius);
+				o.uv2[1] = v.uv + _MainTex_TexelSize.xy * half2(-_Radius, _Radius);
+				o.uv2[2] = v.uv + _MainTex_TexelSize.xy * half2(-_Radius, -_Radius);
+				o.uv2[3] = v.uv + _MainTex_TexelSize.xy * half2(_Radius, -_Radius);
 				
 				return o;
 			}
 			
 			sampler2D _MainTex;
 
-			fixed4 frag (v2f i) : SV_Target
+			fixed4 fragBloom (v2f i) : SV_Target
 			{
 				fixed4 col = tex2D(_MainTex, i.uv);
-				// just invert the colors
+				
 				col = max(col, tex2D(_MainTex, i.uv2[0]));
 				col = max(col, tex2D(_MainTex, i.uv2[1]));
 				col = max(col, tex2D(_MainTex, i.uv2[2]));
 				col = max(col, tex2D(_MainTex, i.uv2[3]));
 
-				
-				return saturate(col - half4(0.1,0.1,0.1,0));
+				//return lerp(0, col, (Luminance(col) - (1-_Threshold)));
+				return saturate((Luminance(col) - (1-_Threshold)) * _BloomColor);
+				//return saturate(col - (1 - _Threshold));
 			}
 			ENDCG
 		}
 
+		//Pass 1
 		Pass{
 			CGPROGRAM
-			#pragma vertex vertbloom
-			//#pragma vertex vertbloomHor
-			#pragma fragment fragmentbloom
+			#pragma vertex vertblur
+			#pragma fragment fragmentblur
 
 			sampler2D _MainTex;
+			sampler2D _BloomTex;
 			half4 _MainTex_TexelSize;
+			float _Radius;
+			float4 _BloomColor;
+
 			#include "UnityCG.cginc"
 			struct v2f_withBlurCoordsSGX {
 				float4 pos : SV_POSITION;
@@ -86,12 +98,13 @@
 				float2 uv : TEXCOORD0;
 			};
 
-			v2f_withBlurCoordsSGX vertbloom(appdata v)
+			v2f_withBlurCoordsSGX vertblur(appdata v)
 			{
 				v2f_withBlurCoordsSGX o;
 				o.pos = UnityObjectToClipPos(v.vertex);
-				half2 netFilterWidth = _MainTex_TexelSize.xy * half2(0.0, 1.0) * 2;
+				half2 netFilterWidth = _MainTex_TexelSize.xy * half2(0.0, 1.0) * _Radius;
 
+				//高斯模糊3σ采样
 				o.offset[0] = v.uv + netFilterWidth;
 				o.offset[1] = v.uv + netFilterWidth*2.0;  
             	o.offset[2] = v.uv + netFilterWidth*3.0;  
@@ -104,37 +117,21 @@
 				return o;
 			}
 
-			v2f_withBlurCoordsSGX vertbloomHor(v2f_withBlurCoordsSGX v)
+			fixed4 fragmentblur(v2f_withBlurCoordsSGX  i) : SV_Target
 			{
-				v2f_withBlurCoordsSGX o;
-				//o.pos = UnityObjectToClipPos(v.vertex);
-				half2 netFilterWidth = _MainTex_TexelSize.xy * half2(1.0, 0.0) * 2;
-
-				o.offset[0] = v.offset[0] + netFilterWidth;
-				o.offset[1] = v.offset[1] + netFilterWidth*2.0;  
-            	o.offset[2] = v.offset[2] + netFilterWidth*3.0;  
-            	o.offset[3] = v.offset[3] - netFilterWidth;  
-            	o.offset[4] = v.offset[4] - netFilterWidth*2.0;  
-            	o.offset[5] = v.offset[5] - netFilterWidth*3.0;  
-				o.offset[6] = v.offset[6];
-
-				
-				return o;
-			}
-
-			fixed4 fragmentbloom(v2f_withBlurCoordsSGX  i) : COLOR
-			{
-				fixed4 color = tex2D(_MainTex, i.offset[6]) * 0.2;
+				//这里权重参数是曲线值，可以是正太分布（高斯）曲线，也可以是自定义曲线
+				fixed4 color = tex2D(_MainTex, i.offset[6]) * 0.5;
 				
 				
-				color += tex2D(_MainTex, i.offset[0]) * 0.5;
-				color += tex2D(_MainTex, i.offset[1]) * 0.1;
-				color += tex2D(_MainTex, i.offset[2]) * 0.1;
-				color += tex2D(_MainTex, i.offset[3]) * 0.5;
-				color += tex2D(_MainTex, i.offset[4]) * 0.1;
-				color += tex2D(_MainTex, i.offset[5]) * 0.1;
+				color += tex2D(_MainTex, i.offset[0]) * 0.3;
+				color += tex2D(_MainTex, i.offset[1]) * 0.15;
+				color += tex2D(_MainTex, i.offset[2]) * 0.05;
+				color += tex2D(_MainTex, i.offset[3]) * 0.3;
+				color += tex2D(_MainTex, i.offset[4]) * 0.15;
+				color += tex2D(_MainTex, i.offset[5]) * 0.5;
 				
-				return color;
+				fixed4 color2 = tex2D(_BloomTex, i.offset[6]) * 0.5;
+				return color + color2;
 			}
 			ENDCG
 		}
