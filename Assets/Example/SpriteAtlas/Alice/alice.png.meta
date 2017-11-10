@@ -1,0 +1,595 @@
+fileFormatVersion: 2
+guid: 1acf0989e0094c24388ef6affe26196b
+timeCreated: 1510119762
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: alice_0
+    21300002: alice_1
+    21300004: alice_2
+    21300006: alice_3
+    21300008: alice_4
+    21300010: alice_5
+    21300012: alice_6
+    21300014: alice_7
+    21300016: alice_8
+    21300018: alice_9
+    21300020: alice_10
+    21300022: alice_11
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapU: 1
+    wrapV: -1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: alice_0
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 106
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 11}
+        - {x: -7, y: -5}
+        - {x: -7, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 19}
+        - {x: 10, y: 19}
+      - - {x: -19, y: 6}
+        - {x: -14, y: 6}
+        - {x: -13, y: 7}
+        - {x: -13, y: 10}
+        - {x: -14, y: 12}
+        - {x: -17, y: 12}
+        - {x: -19, y: 11}
+      physicsShape:
+      - - {x: -5, y: -3}
+        - {x: -6, y: -11}
+        - {x: -6, y: -30}
+        - {x: -4, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 17}
+        - {x: 22, y: 17}
+        - {x: 6, y: 15}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: alice_1
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 106
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 32}
+        - {x: -15, y: 32}
+        - {x: -22, y: 31}
+        - {x: -32, y: 22}
+        - {x: -32, y: -32}
+        - {x: 16, y: -32}
+        - {x: 20, y: -14}
+        - {x: 20, y: 24}
+      - - {x: 27, y: -24}
+        - {x: 21, y: -24}
+        - {x: 21, y: -29}
+        - {x: 25, y: -32}
+        - {x: 28, y: -32}
+        - {x: 30, y: -30}
+        - {x: 30, y: -26}
+      - - {x: 20, y: -15}
+        - {x: 23, y: -14}
+        - {x: 23, y: -11}
+        - {x: 20, y: -10}
+        - {x: 18, y: -12}
+      - - {x: 21, y: 13}
+        - {x: 19, y: 11}
+        - {x: 19, y: 9}
+        - {x: 22, y: 6}
+        - {x: 24, y: 6}
+        - {x: 26, y: 8}
+        - {x: 26, y: 10}
+        - {x: 23, y: 13}
+      physicsShape:
+      - - {x: 1, y: 31}
+        - {x: -13, y: 31}
+        - {x: -28, y: 27}
+        - {x: -32, y: 21}
+        - {x: -32, y: -32}
+        - {x: 12, y: -32}
+        - {x: 18, y: -9}
+        - {x: 18, y: -2}
+        - {x: 8, y: 24}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: alice_2
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 106
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22, y: 24}
+        - {x: -17, y: 5}
+        - {x: -17, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 24}
+      - - {x: -20, y: 19}
+        - {x: -19, y: 16}
+        - {x: -16, y: 16}
+        - {x: -14, y: 18}
+        - {x: -15, y: 21}
+        - {x: -18, y: 21}
+      physicsShape:
+      - - {x: 8, y: 15}
+        - {x: -16, y: -3}
+        - {x: -16, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 15}
+      - - {x: 29, y: 19}
+        - {x: 31, y: 17}
+        - {x: 32, y: 17}
+        - {x: 32, y: 22}
+        - {x: 30, y: 22}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: alice_3
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 106
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 31}
+        - {x: -32, y: -32}
+        - {x: 7, y: -32}
+        - {x: 10, y: -22}
+        - {x: 10, y: 31}
+      - - {x: 11, y: -29}
+        - {x: 11, y: -31}
+        - {x: 12, y: -32}
+        - {x: 20, y: -32}
+        - {x: 20, y: -30}
+        - {x: 18, y: -28}
+        - {x: 13, y: -27}
+      - - {x: 10, y: -18}
+        - {x: 13, y: -17}
+        - {x: 13, y: -14}
+        - {x: 10, y: -13}
+        - {x: 8, y: -15}
+      - - {x: 11, y: 10}
+        - {x: 9, y: 8}
+        - {x: 9, y: 6}
+        - {x: 12, y: 3}
+        - {x: 14, y: 3}
+        - {x: 16, y: 5}
+        - {x: 16, y: 7}
+        - {x: 13, y: 10}
+      physicsShape:
+      - - {x: -6, y: 28}
+        - {x: -20, y: 28}
+        - {x: -32, y: 23}
+        - {x: -32, y: -32}
+        - {x: 6, y: -32}
+        - {x: 8, y: -31}
+        - {x: 8, y: 13}
+        - {x: 7, y: 21}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: alice_4
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 106
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 20}
+        - {x: -11, y: -2}
+        - {x: -11, y: -31}
+        - {x: -10, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 20}
+      - - {x: -30, y: 16}
+        - {x: -29, y: 13}
+        - {x: -26, y: 13}
+        - {x: -24, y: 15}
+        - {x: -25, y: 18}
+        - {x: -28, y: 18}
+      physicsShape:
+      - - {x: 16, y: 19}
+        - {x: -10, y: 4}
+        - {x: -10, y: -27}
+        - {x: -9, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 19}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: alice_5
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 106
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 11, y: -32}
+        - {x: 16, y: -26}
+        - {x: 16, y: 28}
+        - {x: 13, y: 32}
+      - - {x: 17, y: -26}
+        - {x: 17, y: -27}
+        - {x: 22, y: -32}
+        - {x: 25, y: -32}
+        - {x: 26, y: -30}
+        - {x: 26, y: -25}
+        - {x: 20, y: -23}
+      - - {x: 14, y: -13}
+        - {x: 16, y: -15}
+        - {x: 19, y: -14}
+        - {x: 19, y: -11}
+        - {x: 17, y: -9}
+        - {x: 14, y: -10}
+      - - {x: 15, y: 12}
+        - {x: 15, y: 10}
+        - {x: 18, y: 7}
+        - {x: 20, y: 7}
+        - {x: 22, y: 9}
+        - {x: 20, y: 14}
+        - {x: 17, y: 14}
+      physicsShape:
+      - - {x: 2, y: 28}
+        - {x: -4, y: 32}
+        - {x: -23, y: 32}
+        - {x: -32, y: 25}
+        - {x: -32, y: -32}
+        - {x: 8, y: -32}
+        - {x: 11, y: -29}
+        - {x: 14, y: -12}
+        - {x: 14, y: 0}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: alice_6
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 42
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: -3}
+        - {x: -32, y: -16}
+        - {x: -29, y: -17}
+        - {x: -22, y: -17}
+        - {x: -19, y: -14}
+        - {x: -20, y: -10}
+        - {x: -21, y: -8}
+      - - {x: -6, y: 32}
+        - {x: -6, y: 6}
+        - {x: 17, y: -6}
+        - {x: 32, y: -6}
+        - {x: 32, y: 32}
+      - - {x: -32, y: 4}
+        - {x: -32, y: -3}
+        - {x: -23, y: -3}
+        - {x: -19, y: -1}
+        - {x: -19, y: 4}
+      physicsShape:
+      - - {x: -28, y: -6}
+        - {x: -32, y: -6}
+        - {x: -32, y: -14}
+        - {x: -29, y: -15}
+        - {x: -25, y: -15}
+        - {x: -23, y: -12}
+        - {x: -23, y: -10}
+      - - {x: -4, y: 32}
+        - {x: -4, y: 27}
+        - {x: 4, y: 10}
+        - {x: 10, y: 0}
+        - {x: 24, y: -4}
+        - {x: 32, y: -4}
+        - {x: 32, y: 32}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: alice_7
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 42
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -5}
+        - {x: -29, y: -5}
+        - {x: -19, y: -27}
+        - {x: -14, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 18}
+        - {x: 14, y: 32}
+      physicsShape:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -18}
+        - {x: -28, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 6}
+        - {x: 18, y: 32}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: alice_8
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 42
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: -25}
+        - {x: -32, y: -32}
+        - {x: -16, y: -32}
+        - {x: -16, y: -31}
+        - {x: -19, y: -28}
+        - {x: -27, y: -25}
+      - - {x: -17, y: 32}
+        - {x: -17, y: 14}
+        - {x: -5, y: -9}
+        - {x: 26, y: -9}
+        - {x: 32, y: -7}
+        - {x: 32, y: 32}
+      - - {x: -32, y: 5}
+        - {x: -32, y: -8}
+        - {x: -20, y: -8}
+        - {x: -20, y: -1}
+        - {x: -24, y: 5}
+      - - {x: -32, y: 7}
+        - {x: -30, y: 6}
+        - {x: -24, y: 6}
+        - {x: -20, y: 8}
+        - {x: -20, y: 11}
+        - {x: -22, y: 13}
+        - {x: -32, y: 13}
+      physicsShape:
+      - - {x: -20, y: -32}
+        - {x: -21, y: -28}
+        - {x: -28, y: -27}
+        - {x: -32, y: -27}
+        - {x: -32, y: -32}
+      - - {x: -15, y: 32}
+        - {x: -15, y: 29}
+        - {x: -8, y: 6}
+        - {x: 6, y: -7}
+        - {x: 27, y: -7}
+        - {x: 32, y: -5}
+        - {x: 32, y: 32}
+      - - {x: -32, y: 3}
+        - {x: -32, y: -5}
+        - {x: -30, y: -6}
+        - {x: -25, y: -6}
+        - {x: -24, y: -3}
+        - {x: -24, y: 0}
+        - {x: -28, y: 2}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: alice_9
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 42
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 11}
+        - {x: 23, y: 32}
+      - - {x: 20, y: 8}
+        - {x: 20, y: 5}
+        - {x: 24, y: 3}
+        - {x: 30, y: 3}
+        - {x: 32, y: 4}
+        - {x: 32, y: 10}
+        - {x: 22, y: 10}
+      - - {x: 13, y: 32}
+        - {x: 14, y: 29}
+        - {x: 18, y: 29}
+        - {x: 20, y: 31}
+        - {x: 20, y: 32}
+      physicsShape:
+      - - {x: 2, y: 32}
+        - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 23, y: -32}
+        - {x: 23, y: -30}
+        - {x: 30, y: -10}
+        - {x: 30, y: -1}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: alice_10
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 42
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 32}
+        - {x: -9, y: 26}
+        - {x: -6, y: -3}
+        - {x: 6, y: -5}
+        - {x: 32, y: -5}
+        - {x: 32, y: 32}
+      physicsShape:
+      - - {x: -8, y: 32}
+        - {x: -8, y: 29}
+        - {x: 0, y: 1}
+        - {x: 15, y: -3}
+        - {x: 32, y: -3}
+        - {x: 32, y: 32}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: alice_11
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 42
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -11}
+        - {x: -30, y: -32}
+        - {x: 23, y: -32}
+        - {x: 32, y: -24}
+        - {x: 32, y: 18}
+        - {x: 24, y: 32}
+      - - {x: 26, y: 12}
+        - {x: 26, y: 10}
+        - {x: 28, y: 8}
+        - {x: 32, y: 8}
+        - {x: 32, y: 14}
+        - {x: 28, y: 14}
+      physicsShape:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -3}
+        - {x: -19, y: -32}
+        - {x: 28, y: -32}
+        - {x: 32, y: -24}
+        - {x: 32, y: 7}
+        - {x: 8, y: 32}
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

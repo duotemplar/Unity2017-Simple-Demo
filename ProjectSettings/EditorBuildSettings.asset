@@ -5,6 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Example/Scene/MonoBehaviour.unity
     guid: 470e82c6a624b1e4aaa1683034b298c1
+  - enabled: 1
+    path: Assets/Example/Scene/2DSprite.unity
+    guid: 50faa4fefc867bf45a9e71f6f851c9d4
